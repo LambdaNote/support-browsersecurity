@@ -1,0 +1,3 @@
+<iframe id="f" src="http://localhost:20000/chapter02/dd_inner.html"></iframe>
+<button onclick="document.domain = 'localhost';">document.domain</button>
+<button onclick="alert(f.contentWindow.secret.innerHTML)">read</button>

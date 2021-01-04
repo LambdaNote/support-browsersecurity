@@ -1,0 +1,23 @@
+<form id="form01" action="http://localhost:10000/chapter02/resource.html">
+  <input type="hidden" name="test" value="test">
+  <input type="submit">
+</form>
+<form id="form02" action="http://localhost:20000/chapter02/resource.html">
+  <input type="hidden" name="test" value="test">
+  <input type="submit">
+</form>
+  
+<p id="result01"></p>
+<p id="result02"></p>
+<script>
+  fetch("http://localhost:10000/chapter02/resource.html", { headers: { "X-CUSTOM-HEADER": "value" } }).then(() => {
+    document.getElementById("result01").innerText = "#1 succeeded.";
+  }).catch(() => {
+    document.getElementById("result01").innerText = "#1 failed.";
+  });
+  fetch("http://localhost:20000/chapter02/resource.html", { headers: { "X-CUSTOM-HEADER": "value" } }).then(() => {
+    document.getElementById("result02").innerText = "#2 succeeded.";
+  }).catch(() => {
+    document.getElementById("result02").innerText = "#2 failed.";
+  });
+</script>

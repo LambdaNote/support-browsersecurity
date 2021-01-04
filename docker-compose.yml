@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - 10000:80
+      - 20000:80
+    depends_on:
+      - php-fpm
+    volumes:
+      - ./src:/var/www/web
+
+  php-fpm:
+    image: php:7.2.0-fpm-alpine
+    volumes:
+      - ./src:/var/www/web

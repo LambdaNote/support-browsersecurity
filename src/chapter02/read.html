@@ -1,0 +1,8 @@
+<script>
+  window.addEventListener("load", () => {
+    alert(window.frame01.contentWindow.secret.innerHTML == "THIS IS A SECRET MESSAGE");
+    alert(window.frame02.contentWindow.secret.innerHTML == "THIS IS A SECRET MESSAGE");
+  });
+</script>
+<iframe id="frame01" src="http://localhost:10000/chapter02/resource.html"></iframe>
+<iframe id="frame02" src="http://localhost:20000/chapter02/resource.html"></iframe>

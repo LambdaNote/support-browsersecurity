@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <title>書籍『Webブラウザセキュリティ』サンプルコード集</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="hero">
+            <div class="hero-body">
+                <h1 class="title">書籍『Webブラウザセキュリティ』</h1>
+                <h2 class="subtitle">サンプルコード集</h2>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="section" id="chapter02">
+            <h1 class="title">第 2 章</h1>
+            <h2 class="subtitle">Origin を境界とした基本的な機構</h2>
+            <a class="panel-block" href="/chapter02/read.html">
+                <span class="panel-icon"> <i class="fas fa-book" aria-hidden="true"></i> </span>
+                ブラウザ内アクセスの Same-Origin Policy による制限の例（read.html）
+            </a>
+            <a class="panel-block" href="/chapter02/write.html">
+                <span class="panel-icon"> <i class="fas fa-book" aria-hidden="true"></i> </span>
+                ネットワーク越しのアクセスの Same-Origin Policy による制限の例（write.html）
+            </a>
+            <a class="panel-block" href="/chapter02/jsonploader.html">
+                <span class="panel-icon"> <i class="fas fa-book" aria-hidden="true"></i> </span>
+                JSONP による Cross-Origin なリソースの共有（jsonploader.html）
+            </a>
+            <a class="panel-block" href="/chapter02/dd_embedder.html">
+                <span class="panel-icon"> <i class="fas fa-book" aria-hidden="true"></i> </span>
+                document.domainによる Same-Origin Policy の緩和（dd_embedder.html）
+            </a>
+            <a class="panel-block" href="/chapter02/csp_enabled.php">
+                <span class="panel-icon"> <i class="fas fa-book" aria-hidden="true"></i> </span>
+                Content-Security-Policy により JavaScript 実行が制限されたページ（csp_enabled.php）
+            </a>
+            <a class="panel-block" href="/chapter02/csp_disabled.php">
+                <span class="panel-icon"> <i class="fas fa-book" aria-hidden="true"></i> </span>
+                Content-Security-Policy の設定がなされていないページ（csp_disabled.php）
+            </a>
+        </section>
+        <section class="section" id="chapter03">
+            <h1 class="title">第 3 章</h1>
+            <h2 class="subtitle">Web ブラウザのプロセス分離によるセキュリティ</h2>
+            <a class="panel-block" href="/chapter03/opener.html">
+                <span class="panel-icon"> <i class="fas fa-book" aria-hidden="true"></i> </span>
+                window.opener のリダイレクト時の挙動
+            </a>
+        </section>
+
+        <section class="section" id="chapter03">
+            <h1 class="title">第 5 章</h1>
+            <h2 class="subtitle">リソースの完全性と機密性に関連する機構</h2>
+            <a class="panel-block" href="/chapter05/loader.html">
+                <span class="panel-icon"> <i class="fas fa-book" aria-hidden="true"></i> </span>
+                Subresource Integrity（SRI）の挙動
+            </a>
+        </section>
+
+    </div>
+</body>
+
+</html>
